@@ -6,10 +6,14 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [environ             "1.1.0"]
-                 [morse               "0.2.4"]]
+                 [morse               "0.2.4"]
+                 [lynxeyes/dotenv "1.1.0"]
+                 [cheshire "5.10.0"]
+                 [clj-http "3.11.0"]]
 
-  :plugins [[lein-environ "1.1.0"]]
+  :plugins [
+            [lein-environ "1.1.0"]
+            [lein-cljfmt "0.7.0"]]
 
   :main ^:skip-aot tg-yafisha.core
   :target-path "target/%s"
